@@ -1,1 +1,4 @@
-
+word = str(input("Give me a word: "))
+times = int(input("How many times should I repeat this word?: "))
+message_1 = (word + " ") * times
+print(message_1)
