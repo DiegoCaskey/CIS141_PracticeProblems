@@ -1,0 +1,6 @@
+reading = float(input("The sensor is inoperable. Please enter the sensor reading manually: "))
+threshold = 8
+if reading >= threshold:
+    print("*The headlights turn on*")
+else:
+    print("*The turn headlights off*")
