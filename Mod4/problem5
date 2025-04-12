@@ -1,0 +1,6 @@
+price = float(input("How much was your order?: "))
+if price >= 50:
+     print(f"This order qualifies for free shipping. The total will be ${price}")
+else:
+    new_price = price + 5
+    print(f"This order does not qualify for free shipping. The total will be ${new_price}")
