@@ -1,0 +1,2 @@
+balance = float(input("How much money do you have? I'll tell you if you are super rich: "))
+print(balance >= 100)
