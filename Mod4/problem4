@@ -1,0 +1,7 @@
+age = int(input("Welcome to Unreal Theaters! How old are you?: "))
+if age < 13:
+    print("Here are the the G rated movies we are showing tonight:\nBob The Welder: The Last Solder\nNora The Explorer: The Big Backpack\nCautious George: Banana Valley")
+elif age >= 13 and age < 18:
+    print("Here are the PG-13 rated movies we are showing tonight:\nNinja Tortoises\nTransformationers\nMarvel's Averagers")
+elif age >= 18:
+    print("Here are the R rated movies we are showing tonight:\nNeed For Greed 7\nFighting Club\nKill Jill")
