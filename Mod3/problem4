@@ -1,0 +1,6 @@
+#4. Prompt the user for: a word, a first index, and a last index. Slice the word at the indexes provided by the user and print to the screen.
+word = str(input("Give me a word: "))
+ind1 = int(input("What is the first index?: "))
+ind2 = int(input("What is the last index?: "))
+result = word[ind1:ind2]
+print(result)
