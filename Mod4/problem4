@@ -1,3 +1,4 @@
+#4. A theater wants to enforce age restrictions for movie tickets. Ask the user for their age, and tell them whether they can see G (appropriate for under 13), PG-13 (appropriate for 13 to 17), or R (appropriate for over 18) rated movies.
 age = int(input("Welcome to Unreal Theaters! How old are you?: "))
 if age < 13:
     print("Your audience rating is G. Here are some recommendations:\nBob The Welder: The Last Solder\nNora The Explorer: The Big Backpack\nCautious George: Banana Valley")
