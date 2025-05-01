@@ -7,6 +7,8 @@
 # Exiting...
 num = int(input("Give me any whole number besides 0...I don't like those: "))
 while num != 0:
+    print(f"A {num}? Thank you!")
     num = int(input("Om-nom-nom. Give me another number!: "))
     if num == 0:
+        print(f"A {num}? Bleh!")
         print("Destroying world in:\n3...\n2...\n1...")
