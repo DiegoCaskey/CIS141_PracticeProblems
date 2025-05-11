@@ -1,0 +1,10 @@
+#4.  Create a list of integers. Write code that counts how many numbers are positive and how many are negative, then print both counts.
+numbers = [-3,-2,-1,10,20,30,40]
+count_pos = 0
+count_neg = 0
+for number in numbers:
+    if number > 0:
+        count_pos += 1
+    elif number < 0:
+        count_neg += 1
+print(f"Positive Count: {count_pos}\nNegative Count: {count_neg}")
