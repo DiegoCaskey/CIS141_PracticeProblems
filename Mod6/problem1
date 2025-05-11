@@ -1,1 +1,8 @@
-
+#1. Create a list of integers (you get to pick!). Write code to iterate through the list and calculate the sum of all even numbers. Print the resulting sum.
+numbers = [1,2,3,4,5,6,7,8,9]
+new_list = []
+for number in numbers:
+    if number % 2 == 0:
+        new_list.append(number)
+print(new_list) #Added print for understanding
+print(sum(new_list))
