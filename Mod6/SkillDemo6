@@ -1,0 +1,17 @@
+move_list = ['Fire Blast / Fire / 90', 'Ember / Fire / 30', 'Hydro Pump / Water / 90', 'Water Gun / Water / 30', 'Thunder / Electric / 90', 'Thunder-shock / Electric / 30', 'Hyper Beam / Normal / 120']
+weak = str.lower(input("What is the opponent's weakness?: "))
+hp = float(input("How much HP do they have left?: "))
+high_recommend = []
+recommend = []
+not_recommend = []
+for move in move_list:
+    move_info = move.split(" / ")
+    move_type = move_info[1].lower()
+    move_dmg = float(move_info[2])
+    if weak in move_type:
+        high_recommend.append(move)
+    elif weak not in move_type and move_dmg >= (hp*2):
+        recommend.append(move)
+    else:
+        not_recommend.append(move)
+print(f"Highly Recommended: {high_recommend}\nRecommended: {recommend}\nNot Recommended: {not_recommend}")
