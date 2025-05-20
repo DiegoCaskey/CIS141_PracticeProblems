@@ -1,0 +1,24 @@
+# Define character creation function
+def char_gen(name, job, lvl, hp):
+    return f"{name} - Class: {job}, Level: {lvl}, Health: {hp}"
+# Generate stats for Warrior
+char1_name = "Link"
+char1_job = "Knight"
+char1_lvl = 100
+char1_hp = 3
+formatted_stats = char_gen(char1_name, char1_job, char1_lvl, char1_hp)
+print(formatted_stats) #DONOTALTER
+# Generate stats for Mage
+char2_name = "Merlin"
+char2_job = "Mage"
+char2_lvl = 12
+char2_hp = 120
+formatted_stats = char_gen(char2_name, char2_job, char2_lvl, char2_hp)
+print(formatted_stats) #DONOTALTER
+# Generate stats for Rogue
+char3_name = "Ezio"
+char3_job = "Rogue"
+char3_lvl = 8
+char3_hp = 100
+formatted_stats = char_gen(char3_name, char3_job, char3_lvl, char3_hp)
+print(formatted_stats) #DONOTALTER
