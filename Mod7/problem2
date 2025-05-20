@@ -1,0 +1,10 @@
+# 2. Write a function called is_palindrome(s) that checks whether a string is a palindrome
+# (reads the same forward and backward, ignoring case). The function should
+# returns either True or False.
+def is_palindrome(s):
+    s = s.lower()
+    s_reversed = s[::-1]
+    return s == s_reversed
+user_word = str(input("Give me a word!: "))
+determine = is_palindrome(user_word)
+print(determine)
