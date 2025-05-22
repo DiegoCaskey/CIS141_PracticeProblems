@@ -5,6 +5,7 @@
 # - Counts how many times each word appears
 # - Creates a dictionary of the words and their counts
 # - Print the dictionary to the console
+
 with open('song_lyrics.txt', 'r') as file:
     content = file.read().lower()
 
