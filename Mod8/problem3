@@ -1,0 +1,31 @@
+# 3. Create a text file called song_lyrics.txt and copy the lyrics of a song into
+# it. Write a Python program that:
+# - Reads the file
+# - Requests 5 inputs from the user: 5 words the user would like to count the frequency of
+# - Counts how many times each word appears
+# - Creates a dictionary of the words and their counts
+# - Print the dictionary to the console
+with open('song_lyrics.txt', 'r') as file:
+    content = file.read().lower()
+
+word_1 = input("Give me 5 words one at a time.\n\nWord 1: ").lower()
+word_2 = input("Word 2: ").lower()
+word_3 = input("Word 3: ").lower()
+word_4 = input("Word 4: ").lower()
+word_5 = input("Word 5: ").lower()
+
+count_1 = content.split().count(word_1)
+count_2 = content.split().count(word_2)
+count_3 = content.split().count(word_3)
+count_4 = content.split().count(word_4)
+count_5 = content.split().count(word_5)
+
+word_counts = {
+    word_1: count_1,
+    word_2: count_2,
+    word_3: count_3,
+    word_4: count_4,
+    word_5: count_5
+}
+
+print(word_counts)
