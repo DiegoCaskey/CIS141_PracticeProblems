@@ -1,0 +1,19 @@
+# 4. Create a poll.txt file that contains a list of "yea" or "nay" votes separated
+# by commas. Write a program that reads the poll.txt file
+# Count how many votes "yea" or "nay" received and print the results.
+with open('poll.txt', 'r') as file:
+    content = file.read().lower()
+
+votes = content.split(',')
+y_count = 0
+n_count = 0
+
+for vote in votes:
+    if 'yea' in vote:
+        y_count += 1
+    elif 'nay' in vote:
+        n_count += 1
+        
+print(f"Total: {y_count + n_count}")
+print(f"Yea: {y_count}")
+print(f"Nay: {n_count}")
