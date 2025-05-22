@@ -1,0 +1,21 @@
+# 2. Write a Python program that allows users to log their hiking trips. The program should:
+# - Use a while loop to repeatedly ask for a hike name and distance in miles
+# - Save each entry to hiking_log.txt (each hike on a new line)
+# - When the user presses 0, exit the loop & print the contents of hiking_log.txt
+
+file = open('hiking_log.txt', 'w')
+file.write("My Hikes:\n")
+file.close()
+
+file = open('hiking_log.txt', 'a')
+while True:
+    h_name = str(input("What was the name of this hike? (0 to exit): "))
+    if h_name == str(0):
+        break
+    h_length = float(input("How long was it?: "))
+    with open('hiking_log.txt', 'a') as file:
+        file.write(f"- {h_name}, {h_length} miles\n")
+        file.close()
+    with open('hiking_log.txt', 'r') as file:
+        print(file.read())
+        file.close()
