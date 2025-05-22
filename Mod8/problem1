@@ -1,1 +1,14 @@
+# 1. Create a file called gardening_tips.txt and add at least 3 gardening tips to
+# it. Write a Python script that reads a file gardening_tips.txt and prints
+# out each tip one by one.
 
+file = open('gardening_tips.txt', 'w')
+tip_1 = "Paint your thumb green\n"
+tip_2 = "Put dirt on your overalls\n"
+tip_3 = "Wear a large straw hat\n"
+file.write(tip_1 + tip_2 + tip_3)
+file.close()
+
+file = open('gardening_tips.txt', 'r')
+print(file.read())
+file.close()
