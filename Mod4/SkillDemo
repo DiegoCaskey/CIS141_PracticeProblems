@@ -1,5 +1,5 @@
 final_grade = int(input("What was your final grade?: "))
-if final_grade >= 96 and final_grade < 100:
+if final_grade >= 96 and final_grade <= 100:
    print("Your GPA for this class is 4.0")
 elif final_grade >= 93 and final_grade <= 95:
    print("Your GPA for this class is 3.7")
