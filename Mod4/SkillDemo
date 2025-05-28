@@ -1,0 +1,27 @@
+final_grade = int(input("What was your final grade?: "))
+if final_grade >= 96 and final_grade < 100:
+   print("Your GPA for this class is 4.0")
+elif final_grade >= 93 and final_grade <= 95:
+   print("Your GPA for this class is 3.7")
+elif final_grade >= 90 and final_grade <= 92:
+   print("Your GPA for this class is 3.3")
+elif final_grade >= 87 and final_grade <= 89:
+   print("Your GPA for this class is 3.0")
+elif final_grade >= 83 and final_grade <= 86:
+   print("Your GPA for this class is 2.7")
+elif final_grade >= 80 and final_grade <= 82:
+   print("Your GPA for this class is 2.3")
+elif final_grade >= 77 and final_grade <= 79:
+   print("Your GPA for this class is 2.0")
+elif final_grade >= 73 and final_grade <= 76:
+   print("Your GPA for this class is 1.7")
+elif final_grade >= 70 and final_grade <= 72:
+   print("Your GPA for this class is 1.3")
+elif final_grade >= 67 and final_grade <= 69:
+   print("Your GPA for this class is 1.0")
+elif final_grade >= 63 and final_grade <= 66:
+   print("Your GPA for this class is 0.7")
+elif final_grade <= 62 and final_grade >= 0:
+   print("...you failed :(")
+else:
+   print("Please restart the program and enter a valid grade (0-100 points)")
